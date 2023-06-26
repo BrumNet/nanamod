@@ -1,0 +1,355 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#nav_grid{
+  float: right;
+  min-width: 50vw;
+}
+
+#nav_grid ul{
+  list-style-type: none;
+  margin-bottom: 2em;
+}
+
+#nav_grid ul li{
+  display: inline-block;
+  padding-right: 5em;
+  margin-top: 1em;
+  color: red;
+  font-weight: bold;
+}
+
+
+#image{  
+  clear: both;
+  width: 100%;
+  height: 75vh;
+  background-color: grey;
+  background-image: url('./images/home/image15.jpg');
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+#dealer{
+  padding: 2em;
+}
+
+#dealer button{
+  float: right;
+  padding: 1em;
+  border-radius: 4px;
+  background-color: green;
+  color: white;
+  border: none;
+}
+
+#dealer button::after{
+    clear: both;
+}
+
+#tool_section{
+  margin-top: 3em;
+  padding-bottom: 3em;
+  background-color: whitesmoke;
+  width: 100%;
+  min-height: 40vh;
+}
+
+#tool_menu{
+  width: 80%;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  box-sizing: border-box;
+}
+
+#tool_menu div{
+  box-sizing: border-box;
+  
+}
+
+ .flex_tools{
+  /*text-shadow: 1px 1px 9px rgba(24, 91, 247, 0.8);*/
+ }
+
+.flex_tools div{
+  border: 5px solid #62d813;
+  border-radius: 15px;
+  width: 100px;
+  height: 75px;
+  background-color: whitesmoke;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 50px 50px 5px 50px;
+  /*box-shadow: 2px 0px 10px 6px rgba(23, 211, 95, 0.23);*/
+}
+
+
+.flex_tools #tractor{
+  background-image: url('./images/home/toolmenu/tractor.jpg');
+}
+
+
+.flex_tools #combineH{
+  background-image: url('./images/home/toolmenu/combineH.png');
+}
+
+
+.flex_tools #irrigation{
+  background-image: url('./images/home/toolmenu/irrigation.jpg');
+}
+
+
+.flex_tools #livestock{
+  background-image: url('./images/home/toolmenu/livestock.jpg');
+}
+
+
+.flex_tools #steelstructures{
+  background-image: url('./images/home/toolmenu/steelStruct.jpg');
+}
+
+.flex_tools #implement{
+  background-image: url('./images/home/toolmenu/implement.jfif');
+}
+
+#content {
+  display: block;
+  box-sizing: border-box;
+}
+
+#content::after {
+  clear: both;
+  content: '';
+  display: block;
+}
+
+.sub{
+  float: left;
+  box-sizing: border-box;
+  width: 500px;
+  height: 300px;
+  margin-top: 150px;
+  margin-left: 10%;
+  position: relative;
+}
+
+#content div:nth-child(2n + 1) {
+  clear: both;
+}
+
+#content .sub div:nth-child(n) {
+  position: absolute;
+  background-color: green;
+  height: 100%;
+  width: 70%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+#content .sub div:nth-child(2n) {
+  position: absolute;
+  background-color: whitesmoke;
+  opacity: 0.8;
+  height: 100%;
+  width: 50%;
+  right: 0px;
+}
+
+#content #sub1image{
+  background-image: url('./images/home/content/image_17.jpg');
+} 
+#content #sub2image{
+  background-image: url('./images/home/content/image_18.jpg');
+} 
+#content #sub3image{
+  background-image: url('./images/home/content/image_19.jpg');
+} 
+#content #sub4image{
+  background-image: url('./images/home/content/image_20.jpg');
+} 
+
+.sub button{
+  position: absolute;
+  bottom: 50px;
+  right: 50%;
+  transform: translate(50%, 0px);
+  padding: 1em;
+  min-width: 200px ;
+  border-radius: 3px;
+  color: white;
+  border: none;
+  background-color: green;
+}
+
+.sub p{
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 30%;
+  font-weight: bold;
+}
+
+
+#people{
+  clear: both;
+  margin-top: 15em;
+}
+
+#peoplecontainer{
+  margin-left: 15%;
+  background-color: whitesmoke;
+  border-radius: 50px;
+  width: 60%;
+  min-height: 100px;
+  padding: 5em 5em;
+}
+
+#people h2{
+  float: left;
+}
+
+#avatars div{
+  border-radius: 50%;
+  border: 1px solid;
+  width: 40px;
+  height: 40px;
+  float: right;
+  margin-right: 5px;
+  background-color: lightpink;
+}
+
+#peoplecontent{
+  clear: both;
+  margin-top: 100px;
+}
+
+#csr{
+  margin-top: 120px;
+}
+
+#csr h2{
+  text-align: center;
+}
+
+#csrcontent{
+  margin-left: 20%;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  box-sizing: border-box;
+}
+
+.csrsec{
+  box-sizing: border-box;
+  width: 30%;
+  min-height: 500px;
+  margin-bottom: 9%;
+  margin-left: 6%;
+  border-radius: 20px;
+  padding-bottom: 4%;
+}
+
+.csrimage{
+  width: 86%;
+  height: 50%;
+  background-color: lightgrey;
+  margin-left: 7%;
+  margin-top: 12%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 2px 0px 10px 6px rgba(223, 255, 255, 0.23);
+}
+
+.csrwriteup{
+ padding: 0 7%;
+}
+
+.csrwriteup p{
+  min-height: 80px;
+}
+
+.csrwriteup button{
+  float: right;
+  color: white;
+  background-color: green;
+  border: none;
+  padding: 1em;
+  min-width: 100px;
+  border-radius: 5px;
+}
+
+#csrfirst, #csrfourth{
+  background-color: lightpink;
+}
+
+#csrsecond, #csrthird{
+  background-color: whitesmoke;
+}
+
+
+#csrfirst .csrimage{
+  background-image: url('./images/home/csr/image_21.png');
+}
+
+#csrsecond .csrimage{
+  background-image: url('./images/home/csr/image_22.jpg');
+}
+
+#csrthird .csrimage{
+  background-image: url('./images/home/csr/image_23.jpg');
+}
+
+#csrfourth .csrimage{
+  background-image: url('./images/home/csr/image_27.jpg');
+}
+
+#footer{
+  text-align: center;
+}
+
+#footerup{
+  padding-top: 4%;
+  background-color: whitesmoke;
+  min-height: 300px;
+  line-height: 1.8;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  box-sizing: border-box;
+}
+
+#footerup div{
+  box-sizing: border-box;
+  width: 33.33%;
+  margin-bottom: 4%;
+  padding: 0px 10px;
+}
+
+
+#footerdown{
+  background-color: black;
+  color: white;
+  min-height: 200px;
+  padding-top: 5%;
+}
+
+#footerdown p{
+  margin-bottom: 2%;
+}

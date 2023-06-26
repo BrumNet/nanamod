@@ -1,0 +1,201 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#logo{
+  float: left;
+  margin-left: 40px;
+  height: 65px;
+  min-width: 65px;
+  background-color: grey;
+  background-image: url('./images/oxlogo.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#nav_grid{
+  float: right;
+  min-width: 50vw;
+}
+
+#nav_grid ul{
+  list-style-type: none;
+  margin-bottom: 2em;
+}
+
+#nav_grid ul li{
+  display: inline-block;
+  padding-right: 5em;
+  margin-top: 1em;
+  color: red;
+  font-weight: bold;
+}
+
+
+#image{  
+  clear: both;
+  width: 100%;
+  height: 55vh;
+  background-color: grey;
+  background-image: url('./images/livestock/livestock_2.jpg');
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#image h2{
+  padding-top: 250px;
+  margin-left: 3%;
+  color: white;
+  letter-spacing: 0.5em;
+  text-shadow: 1px 1px 9px rgba(24, 91, 247, 0.8);
+}
+
+#dealer{
+  padding: 2em;
+}
+
+#dealer button{
+  float: right;
+  padding: 1em;
+  border-radius: 4px;
+  background-color: green;
+  color: white;
+  border: none;
+}
+
+#dealer button::after{
+    clear: both;
+}
+
+#breadcrumb{
+  margin-top: 100px;
+  margin-left: 5%;
+}
+
+#hero{
+  padding: 100px 0px;
+}
+
+#herocontainer{
+  box-sizing: border-box;
+  width: 75%;
+  margin-left: 12.5%;
+  border-radius: 70px;
+  border: 2px solid green;
+  padding: 4em;
+  text-align: center;
+  box-shadow: 2px 0px 5px 3px rgba(23, 21, 95, 0.23);
+}
+
+#herocontainer p{
+  margin-top: 100px;
+  letter-spacing: 0.2em;
+}
+
+#catheading{
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+#catimages{
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 100px;
+}
+
+#catimages::after {
+  clear: both;
+  content: '';
+  display: block;
+}
+
+#catimages div{
+  float: left;
+  box-sizing: border-box;
+  width: 30%;
+  margin-left: 13.5%;
+  margin-bottom: 50px;
+  height: 300px;
+  border-radius: 15px;
+  position: relative;
+
+  background-color: grey;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#catimages div:nth-child(2n + 1) {
+  clear: both;
+}
+
+
+#catimages button{
+  position: absolute;
+  bottom: 30px;
+  right: 40px;
+  color: white;
+  background-color: green;
+  border: none;
+  padding: 1em;
+  min-width: 150px;
+  border-radius: 5px;
+  text-align: left;
+}
+
+#cattle{
+  background-image: url('./images/livestock/cattleLive.jpg');
+ 
+}
+
+#goat{
+  background-image: url('./images/livestock/goatLive.jpg');
+}
+
+#piggery{
+  background-image: url('./images/livestock/piggeryLive.jpg');
+}
+
+#poultry{
+  background-image: url('./images/livestock/poultryLive.jpg');
+}
+
+#footer{
+  text-align: center;
+}
+
+#footerup{
+  padding-top: 4%;
+  background-color: whitesmoke;
+  min-height: 300px;
+  line-height: 1.8;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  box-sizing: border-box;
+}
+
+#footerup div{
+  box-sizing: border-box;
+  width: 33.33%;
+  margin-bottom: 4%;
+  padding: 0px 10px;
+}
+
+
+#footerdown{
+  background-color: black;
+  color: white;
+  min-height: 200px;
+  padding-top: 5%;
+}
+
+#footerdown p{
+  margin-bottom: 2%;
+}
