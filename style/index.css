@@ -4,9 +4,40 @@ body{
   box-sizing: border-box;
 }
 
+#logo{
+  float: left;
+  margin-left: 40px;
+  height: 65px;
+  min-width: 65px;
+  background-color: grey;
+  background-image: url('./images/oxlogo.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 #nav_grid{
   float: right;
   min-width: 50vw;
+}
+
+.dropdown{
+  display: none;
+}
+
+#mini{
+  float: right;
+  padding: 15px;
+  display: none;
+}
+
+#mini:hover span{
+  display: none;
+}
+
+#mini:hover .dropdown{
+  clear: both;
+  display: block;
 }
 
 #nav_grid ul{
@@ -22,18 +53,35 @@ body{
   font-weight: bold;
 }
 
+@media (max-width:900px){/*small*/
+    #nav_grid #mini{
+    display: block;
+  }
+  #nav_grid ul{
+    display: none;
+  } 
+ 
+}
+
 
 #image{  
   clear: both;
   width: 100%;
-  height: 75vh;
+  height: 40vh;
   background-color: grey;
   background-image: url('./images/home/image15.jpg');
-  background-position: center top;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
+#image h2{
+  padding-top: 20px;
+  margin-left: 3%;
+  color: white;
+  letter-spacing: 0.2em;
+  text-shadow: 1px 1px 9px rgba(24, 91, 247, 0.5);
+}
 
 #dealer{
   padding: 2em;
@@ -134,14 +182,27 @@ body{
 }
 
 .sub{
-  float: left;
-  box-sizing: border-box;
-  width: 500px;
-  height: 300px;
-  margin-top: 150px;
-  margin-left: 10%;
-  position: relative;
+    float: left;
+    box-sizing: border-box;
+    height: 300px;
+    margin-top: 150px;
+    position: relative;
+  }
+
+@media (max-width:900px){/*small*/
+        .sub{
+            width: 80%;
+            margin-left: 10% ;
+          }
 }
+
+@media (min-width:900px){/*big*/
+        .sub{
+            width: 40%;
+            margin-left: 5%;
+          }
+}
+
 
 #content div:nth-child(2n + 1) {
   clear: both;
@@ -207,7 +268,8 @@ body{
 }
 
 #peoplecontainer{
-  margin-left: 15%;
+  box-sizing: border-box;
+  margin-left: 20%;
   background-color: whitesmoke;
   border-radius: 50px;
   width: 60%;
@@ -229,6 +291,31 @@ body{
   background-color: lightpink;
 }
 
+@media (max-width:700px){/*small*/
+    #avatars {
+      display: none;
+    }
+    #peoplecontainer{
+      margin-left: 5%;
+      padding: 3em 3em;
+      width: 90%;
+    }
+}
+
+@media (max-width:900px){/*small*/
+    #avatars {
+      clear: both;
+      float: right;
+      padding: 10px 0px  30px 0px;
+    }
+}
+
+@media (min-width:900px){/*big*/
+    #avatars {
+      float: right;    }      
+}
+
+
 #peoplecontent{
   clear: both;
   margin-top: 100px;
@@ -243,7 +330,6 @@ body{
 }
 
 #csrcontent{
-  margin-left: 20%;
   margin-top: 100px;
   display: flex;
   flex-direction: row;
@@ -255,12 +341,36 @@ body{
 
 .csrsec{
   box-sizing: border-box;
-  width: 30%;
   min-height: 500px;
   margin-bottom: 9%;
   margin-left: 6%;
   border-radius: 20px;
   padding-bottom: 4%;
+}
+
+
+@media (max-width:900px){/*small*/
+  .csrsec{
+    width: 40%;
+    margin-left: 5%;
+  } 
+}
+
+@media (max-width:700px){/*smaller*/
+  .csrsec{
+    width: 80%;
+    margin-left: 10%;
+  } 
+}
+
+@media (min-width:900px){/*big*/
+  #csrcontent{
+    margin-left: 20%;
+  }
+ .csrsec{
+    width: 30%;
+    margin-left: 6%;
+  }       
 }
 
 .csrimage{
@@ -353,3 +463,15 @@ body{
 #footerdown p{
   margin-bottom: 2%;
 }
+
+/*
+
+@media (max-width:900px){/*small/
+        
+}
+
+@media (min-width:900px){/*big/
+       
+}
+
+*/

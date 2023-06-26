@@ -4,6 +4,11 @@ body{
   box-sizing: border-box;
 }
 
+a{
+  text-decoration: none;
+}
+
+
 #logo{
   float: left;
   margin-left: 40px;
@@ -89,6 +94,14 @@ body{
   padding: 4em;
   text-align: center;
   box-shadow: 2px 0px 5px 3px rgba(23, 21, 95, 0.23);
+}
+
+@media (max-width:700px){/*small*/
+    #herocontainer{
+      width: 90%;
+      margin-left: 5%;
+      padding: 2em;
+    }    
 }
 
 #herocontainer p{

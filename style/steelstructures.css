@@ -4,6 +4,11 @@ body{
   box-sizing: border-box;
 }
 
+a{
+  text-decoration: none;
+}
+
+
 #logo{
   float: left;
   margin-left: 40px;
@@ -91,6 +96,14 @@ body{
   box-shadow: 2px 0px 5px 3px rgba(23, 21, 95, 0.23);
 }
 
+@media (max-width:700px){/*small*/
+    #herocontainer{
+      width: 90%;
+      margin-left: 5%;
+      padding: 2em;
+    }    
+}
+
 #herocontainer p{
   margin-top: 100px;
   letter-spacing: 0.2em;
@@ -121,7 +134,7 @@ body{
   display: block;
   box-sizing: border-box;
   margin-bottom: 100px;
-  margin-left: 20%;
+  margin-left: 15%;
 }
 
 #catimages::after {
@@ -144,6 +157,16 @@ body{
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+@media (max-width:700px){/*small*/
+    #catimages{
+      margin-left: 0%;
+    }
+    #catimages div{
+      width: 90%;
+      margin-left: 5%;
+    }    
 }
 
 #catimages div:nth-child(2n + 1) {

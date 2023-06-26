@@ -15,12 +15,26 @@
 
  	<div id="hero_section_itself">
  		<div id="nav">
+ 			<div id="logo"></div>
  			<div id="nav_grid">
- 				<ul><li>Home</li> <li>Products</li><li>Finance</li><li>Parts and Services</li><li>Tools and Resources</li><ul>
+ 				<div>
+ 					<ul><li class="main" onclick="location.href='index.html'">Home</li> 
+ 					<li class="main">Products</li>
+        			<li class="main">Finance</li><li class="main">Parts and Services</li><li class="main">Tools and Resources</li>
+        		</ul>
+        		</div>
+        		<div id="mini">
+					<span>
+					<svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 0 24 24" width="35px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+					</span>
+				<div class="dropdown">
+				<p><a href="index.html">Home</a></p><p><a href="">Products</a></p><p><a href="">Finance</a></p><p><a href="">Parts and Services</a></p><p><a href="">Tools and Resources</a></p>
+				</div>
+		</div>
  			</div>
  		</div>
 
- 		<div id="image"></div>
+ 		<div id="image"><h2>OX Engineering Limited</h2></div>
 
  		<div id="dealer">
  			<button>Find A Dealer</button>
@@ -47,7 +61,7 @@
  		</div>
  		<div class="flex_tools">
  			<a  href="livestock.html"><div id="livestock"></div></a>
- 			<center>LiveStock</center>
+ 			<center onclick="location.href='livestock.html'">LiveStock</center>
  		</div>
  		<div class="flex_tools">
  			<a  href=""><div id="irrigation"></div></a>
@@ -55,7 +69,7 @@
  		</div>
  		<div class="flex_tools">
  			<a href="steelstructures.html"><div id="steelstructures"></div></a>
- 			<center>Steel Structures</center>
+ 			<center onclick="location.href='steelstructures.html'">Steel Structures</center>
  		</div>
  	</div>
  	
