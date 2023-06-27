@@ -11,21 +11,27 @@ a{
 
 #logo{
   float: left;
-  margin-left: 40px;
+  margin-left: 10px;
   height: 65px;
   min-width: 65px;
-  background-color: grey;
+  margin-bottom: 10px;
+  background-color: white;
   background-image: url('./images/oxlogo.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
+
+#nav{
+  position:relative;
+}
+
 #nav_grid{
   float: right;
   min-width: 50vw;
 }
- 
+
 #nav_grid ul{
   list-style-type: none;
   margin-bottom: 2em;
@@ -39,6 +45,109 @@ a{
   font-weight: bold;
 }
 
+
+
+@media (min-width:900px){
+
+
+.big_nav_link{
+  position: relative;
+}
+
+.big_nav_link:hover{
+  text-decoration: overline green;
+}
+
+.big_nav_link .dropdown{
+  display: none;
+}
+
+.big_nav_link:hover .dropdown{
+  display: block;
+  position: absolute;
+}
+
+.big_nav_link a, .big_nav_link span a{
+  display: inline-block;
+  color: white;
+  text-align: left;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.big_nav_link a:hover, .big_nav_link span a:hover{
+  color: lightpink;
+}
+
+.dropdown div{
+  display: none;
+  z-index: 2;
+}
+
+.dropdown span a{
+  box-sizing: border-box;
+  width: 100%;
+  padding-right: 10px;
+}
+
+.dropdown span:hover div{
+  display: block;
+  position: absolute;
+  margin-left: 100%;
+  width: 200%;
+  margin-top: -38.5px;
+}
+
+.dropdown, .dropdown div{
+  background-color: green;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+
+#mini{
+  display: none;
+}
+
+}
+
+
+@media (max-width:900px){/*small*/
+  #nav_grid{
+    display: none;
+    position: absolute;
+    float: left;
+    width: 100%;
+    background-color: whitesmoke;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+
+  #mini{
+    float: right;
+    margin-right: 15px;
+    margin-top: 15px;
+    display: block;
+  }
+
+  div:has(> #mini:hover) #nav_grid, #nav_grid:hover{
+    display: block;
+  }
+
+  #nav_grid ul li{
+    display: block;
+  }
+  
+  .big_nav_link div{
+    margin-left: 20px;
+  }
+  .big_nav_link div a{
+    color: black;
+  }
+
+  .big_nav_link div div{
+    display: none;
+  } 
+  
+}
 
 #image{  
   clear: both;
@@ -71,6 +180,11 @@ a{
   color: white;
   border: none;
 }
+
+#dealer button:hover{
+  background-color: grey;
+}
+
 
 #dealer button::after{
     clear: both;
@@ -129,8 +243,8 @@ a{
 #catimages div{
   float: left;
   box-sizing: border-box;
-  width: 30%;
-  margin-left: 13.5%;
+  width: 40%;
+  margin-left: 7.5%;
   margin-bottom: 50px;
   height: 300px;
   border-radius: 15px;
@@ -166,6 +280,9 @@ a{
   text-align: left;
 }
 
+#catimages button:hover{
+  background-color: grey;
+}
 #cattle{
   background-image: url('./images/livestock/cattleLive.jpg');
  
