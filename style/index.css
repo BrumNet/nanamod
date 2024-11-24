@@ -291,6 +291,7 @@ body{
 #content {
   display: block;
   box-sizing: border-box;
+  margin-left: 30%;
 }
 
 #content::after {
@@ -300,7 +301,7 @@ body{
 }
 
 .sub{
-    float: left;
+    /* float: left; */
     box-sizing: border-box;
     height: 300px;
     margin-top: 150px;
