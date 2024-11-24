@@ -1,0 +1,284 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+a{
+  text-decoration: none;
+}
+
+
+#logo{
+  float: left;
+  margin-left: 10px;
+  height: 65px;
+  min-width: 65px;
+  margin-bottom: 10px;
+  background-color: white;
+  background-image: url('./images/oxlogo.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#nav{
+  position:relative;
+}
+
+#nav_grid{
+  float: right;
+  min-width: 50vw;
+}
+
+#nav_grid ul{
+  list-style-type: none;
+  margin-bottom: 2em;
+}
+
+#nav_grid ul li{
+  display: inline-block;
+  padding-right: 5em;
+  margin-top: 1em;
+  color: red;
+  font-weight: bold;
+}
+
+
+
+@media (min-width:900px){
+
+
+.big_nav_link{
+  position: relative;
+}
+
+.big_nav_link:hover{
+  text-decoration: overline green;
+}
+
+.big_nav_link .dropdown{
+  display: none;
+}
+
+.big_nav_link:hover .dropdown{
+  display: block;
+  position: absolute;
+}
+
+.big_nav_link a, .big_nav_link span a{
+  display: inline-block;
+  color: white;
+  text-align: left;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.big_nav_link a:hover, .big_nav_link span a:hover{
+  color: lightpink;
+}
+
+.dropdown div{
+  display: none;
+  z-index: 2;
+}
+
+.dropdown span a{
+  box-sizing: border-box;
+  width: 100%;
+  padding-right: 10px;
+}
+
+.dropdown span:hover div{
+  display: block;
+  position: absolute;
+  margin-left: 100%;
+  width: 200%;
+  margin-top: -38.5px;
+}
+
+.dropdown, .dropdown div{
+  background-color: green;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+
+#mini{
+  display: none;
+}
+
+}
+
+
+@media (max-width:900px){/*small*/
+  #nav_grid{
+    display: none;
+    position: absolute;
+    float: left;
+    width: 100%;
+    background-color: whitesmoke;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+
+  #mini{
+    float: right;
+    margin-right: 15px;
+    margin-top: 15px;
+    display: block;
+  }
+
+  div:has(> #mini:hover) #nav_grid, #nav_grid:hover{
+    display: block;
+  }
+
+  #nav_grid ul li{
+    display: block;
+  }
+  
+  .big_nav_link div{
+    margin-left: 20px;
+  }
+  .big_nav_link div a{
+    color: black;
+  }
+
+  .big_nav_link div div{
+    display: none;
+  } 
+  
+}
+#image{  
+  clear: both;
+  width: 100%;
+  height: 55vh;
+  background-color: grey;
+  background-image: url('./images/livestock/cattleLive.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#image h2{
+  padding-top: 250px;
+  margin-left: 3%;
+  color: white;
+  letter-spacing: 0.5em;
+  text-shadow: 1px 1px 9px rgba(24, 91, 247, 0.8);
+}
+
+#dealer{
+  padding: 2em;
+}
+
+#dealer button{
+  float: right;
+  padding: 1em;
+  border-radius: 4px;
+  background-color: green;
+  color: white;
+  border: none;
+}
+
+#dealer button:hover{
+  background-color: grey;
+}
+
+
+#dealer button::after{
+    clear: both;
+}
+
+#breadcrumb{
+  margin-top: 100px;
+  margin-left: 5%;
+}
+
+#hero{
+  padding: 100px 0px;
+}
+
+#herocontainer{
+  box-sizing: border-box;
+  width: 75%;
+  margin-left: 12.5%;
+  border-radius: 70px;
+  border: 2px solid green;
+  padding: 4em;
+  text-align: center;
+  box-shadow: 2px 0px 5px 3px rgba(23, 21, 95, 0.23);
+}
+@media (max-width:700px){/*small*/
+    #herocontainer{
+      width: 90%;
+      margin-left: 5%;
+      padding: 2em;
+    }    
+}
+#herocontainer p{
+  margin-top: 100px;
+  /*letter-spacing: 0.2em;*/
+}
+
+#heroimage{
+  margin-top: 100px;
+  width: 100%;
+  height: 500px;
+  background-color: grey;
+  background-image: url('./images/livestock/cattleLive.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: inherit;
+  box-shadow: 2px 0px 5px 3px rgba(23, 21, 95, 0.23);
+}
+
+#writeup{
+  padding: 0 12.5%;
+  margin-bottom: 100px;
+}
+
+#writeup h4{
+  color: green;
+  font-weight: bolder;
+}
+
+#footer{
+  text-align: center;
+}
+
+#footerup{
+  padding-top: 4%;
+  background-color: whitesmoke;
+  min-height: 300px;
+  line-height: 1.8;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  box-sizing: border-box;
+}
+
+#footerup div{
+  box-sizing: border-box;
+  width: 33.33%;
+  margin-bottom: 4%;
+  padding: 0px 10px;
+}
+
+
+#footerdown{
+  background-color: black;
+  color: white;
+  min-height: 200px;
+  padding-top: 5%;
+}
+
+#footerdown p{
+  margin-bottom: 2%;
+}
+
+button:hover{
+  background-color: grey;
+}
